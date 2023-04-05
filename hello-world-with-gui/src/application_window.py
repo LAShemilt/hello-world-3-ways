@@ -11,3 +11,8 @@ class AppWindow(Gtk.ApplicationWindow):
 
         self.button = Gtk.Button(label="Hello")
         self.box.append(self.button)
+
+        self.button.connect('clicked', self.hello)
+
+    def hello(self, button):
+        print("Hello world")
