@@ -4,7 +4,6 @@ def print_hi(name):
     greeting = f'Hi, {name}'
     print(greeting)
     return greeting
-
 def save_greeting(fname, greeting):
     with open (fname, 'w') as f:
         f.writelines(greeting)
